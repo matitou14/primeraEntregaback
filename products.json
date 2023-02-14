@@ -1,0 +1,1 @@
+[{"id":1,"title":"titulo","description":"sas","code":"req.body.code","price":"req.body.price","status":"req.body.status","stocks":"req.body.stocks","category":"req.body.category","thumbnails":"req.body.thumbnails"}]

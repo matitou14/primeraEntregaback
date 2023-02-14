@@ -1,18 +1,19 @@
-const express = require('express')
-const productsRouter = require ('./router/products.router.js')
-const app = express()
+const express = require('express');
+const app = express();
+
+const productsRouter = require('./router/products.router')
+const cartsRouter = require ('./router/cart.router')
 
 
 
-let products = []
 
-app.listen(8080 , () => { console.log('Server is running on port 8080') })
 
 
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use(express.static('public'));
 app.use('/api/products', productsRouter);
-// app.use('/api/carts', cartRouter );
+app.use('/api/carts', cartsRouter );
 
+
+app.listen(8080 , () => { console.log('Server is running on port 8080') })
