@@ -1,80 +1,46 @@
 [
   {
-    "id": 1,
-    "title": "Costilla de res",
-    "description": "Corte de carne con hueso proveniente de las costillas de la res. Ideal para asar a la parrilla.",
-    "code": "CR001",
+    "id": 2,
+    "title": "Tapa de asado",
+    "description": "parrilla",
+    "code": "cos123",
     "price": 150,
     "status": true,
-    "stocks": 50,
-    "category": "Res",
-    "thumbnails": "https://image.com/costilla-res.jpg"
+    "stock": 150,
+    "category": "corte para parrilla",
+    "thumbnails": []
   },
   {
-    "id": 2,
-    "title": "Chuletón de buey",
-    "description": "Corte grueso de carne de buey con hueso. Ideal para asar a la parrilla o a la plancha.",
-    "code": "BU001",
-    "price": 300,
+    "id": 3,
+    "title": "vacio",
+    "description": "parrilla",
+    "code": "cos123",
+    "price": 150,
     "status": true,
-    "stocks": 30,
-    "category": "Buey",
-    "thumbnails": "https://image.com/chuleton-buey.jpg"
+    "stock": 150,
+    "category": "corte para parrilla",
+    "thumbnails": []
   },
   {
-    "title": "Solomillo de ternera",
-    "description": "Corte de carne tierno y jugoso proveniente del lomo de la ternera. Ideal para cocinar a la plancha o al horno.",
-    "code": "TE001",
-    "price": 250,
+    "id": 4,
+    "title": "costilla",
+    "description": "parrilla",
+    "code": "cos123",
+    "price": 150,
     "status": true,
-    "stocks": 40,
-    "category": "Ternera",
-    "thumbnails": "https://image.com/solomillo-ternera.jpg"
+    "stock": 150,
+    "category": "corte para parrilla",
+    "thumbnails": []
   },
   {
-    "title": "Costilla de cerdo",
-    "description": "Corte de carne con hueso proveniente de las costillas del cerdo. Ideal para asar a la parrilla o al horno.",
-    "code": "CE001",
-    "price": 100,
+    "id": 5,
+    "title": "Costillar con manto",
+    "description": "parrilla",
+    "code": "cos123",
+    "price": 150,
     "status": true,
-    "stocks": 60,
-    "category": "Cerdo",
-    "thumbnails": "https://image.com/costilla-cerdo.jpg"
-  },
-  {
-    "title": "Paleta de cordero",
-    "description": "Corte de carne tierno y jugoso proveniente de la paleta del cordero. Ideal para cocinar a la parrilla o al horno.",
-    "code": "CO001",
-    "price": 200,
-    "status": true,
-    "stocks": 20,
-    "category": "Cordero",
-    "thumbnails": "https://image.com/paleta-cordero.jpg"
-  },
-  {
-    "title": "Entrecot de vaca",
-    "description": "Corte de carne tierno y sabroso proveniente de la parte central de la vaca. Ideal para asar a la parrilla o a la plancha.",
-    "code": "VA001",
-    "price": 280,
-    "status": true,
-    "stocks": 35,
-    "category": "Vaca",
-    "thumbnails": "https://image.com/entrecot-vaca.jpg"
-  },
-  {
-    "title": "Filete de pollo",
-    "description": "Corte de carne tierno y bajo en grasas proveniente del pechuga del pollo. Ideal para cocinar a la plancha o al horno.",
-    "code": "PO001",
-    "price": 80,
-    "status": true,
-    "stocks": 70,
-    "category": "Pollo",
-    "thumbnails": "https://image.com/filete-pollo,jpg"
-  },
-  {
-    "id": null
-  },
-  {
-    "id": null
+    "stock": 150,
+    "category": "corte para parrilla",
+    "thumbnails": []
   }
 ]
