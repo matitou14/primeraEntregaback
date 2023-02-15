@@ -43,15 +43,15 @@ function getNextProductId() {
   return lastProduct ? lastProduct.id + 1 : 1;
 }
 
-  productRouter.post('/', (req, res) => {
-    const { title, description, code, price, status, stock, category, thumbnails } = req.body;
+productRouter.post('/', (req, res) => {
+  const { title, description, code, price, status, stock, category, thumbnails } = req.body;
 
-  let products = JSON.parse(fs.readFileSync(prodfile));    
+  let products = JSON.parse(fs.readFileSync(prodfile));
   const newId = getNextProductId();
-    const newProduct = { id: newId, title, description, code, price, status, stock, category, thumbnails };
-    products.push(newProduct);
-    fs.writeFileSync(prodfile, JSON.stringify(products, null, 2));
-    res.status(201).json(newProduct);
+  const newProduct = { id: newId, title, description, code, price, status, stock, category, thumbnails };
+  products.push(newProduct);
+  fs.writeFileSync(prodfile, JSON.stringify(products, null, 2));
+  res.status(201).json(newProduct);
 
 });
 
@@ -60,7 +60,7 @@ productRouter.put('/:pid', (req, res) => {
   const { title, description, code, price, status, stock, category, thumbnails } = req.body;
   const products = getProducts();
   const index = products.findIndex(p => p.id === parseInt(pid));
-  
+
   if (index === -1) {
     res.status(404).send('Product not found');
   } else {
@@ -80,11 +80,12 @@ productRouter.put('/:pid', (req, res) => {
   }
 });
 
+
 productRouter.delete('/:pid', (req, res) => {
   const { pid } = req.params;
   const products = getProducts();
   const index = products.findIndex(p => p.id === parseInt(pid));
-  
+
   if (index === -1) {
     res.status(404).send('Product not found');
   } else {
